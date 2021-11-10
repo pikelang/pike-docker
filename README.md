@@ -11,7 +11,7 @@ https://hub.docker.com/r/bertrandlupart/pike/tags
 Launch a Pike interactive interpreter :
 
 ```shell
-$ docker run -it bertrandlupart/pike:stable-latest pike
+$ docker run -it --rm bertrandlupart/pike:stable-latest pike
 Pike v8.0 release 1116 running Hilfe v3.5 (Incremental Pike Frontend)
 >
 ```
@@ -20,7 +20,7 @@ Pike v8.0 release 1116 running Hilfe v3.5 (Incremental Pike Frontend)
 
 # Stable : Pike 8.0.x
 
-Container images for *stable / 8.0* are built using using Debian packages, on top of Debian distro containers.
+Container images for *stable / 8.0* are built using Debian packages, on top of Debian distro containers.
 
 About *stable-latest* :
 
@@ -70,7 +70,7 @@ Features......auto_bignum
 
 # Old Stable : Pike 7.8.x
 
-Container images for *oldstable / 7.8* are built using using Debian packages, on top of Debian distro containers.
+Container images for *oldstable / 7.8* are built using Debian packages, on top of Debian distro containers.
 
 About *oldstable-latest* :
 
