@@ -20,12 +20,12 @@ Pike v8.0 release 1116 running Hilfe v3.5 (Incremental Pike Frontend)
 
 # Stable : Pike 8.0.x
 
-Container images for *stable / 8.0* are built using Debian packages, on top of Debian distro containers.
+Container images for *stable / 8.0* are built using Debian packages, on top of [Debian official images](https://hub.docker.com/_/debian)
 
 About *stable-latest* :
 
 ```shell
-$ docker run -it bertrandlupart/pike:stable-latest pike --info
+$ docker run -it --rm bertrandlupart/pike:stable-latest pike --info
 Software......Pike
 Version.......Pike v8.0 release 1116
 WWW...........http://pike.lysator.liu.se/
@@ -67,15 +67,19 @@ Features......auto_bignum
               WhiteFish
               Yp
 ```
+```shell
+$ docker run -it --rm bertrandlupart/pike:stable-latest cat /etc/debian_version
+11.1
+```
 
 # Old Stable : Pike 7.8.x
 
-Container images for *oldstable / 7.8* are built using Debian packages, on top of Debian distro containers.
+Container images for *oldstable / 7.8* are built using Debian packages, on top of [Debian official images](https://hub.docker.com/_/debian)
 
 About *oldstable-latest* :
 
-```
-$ docker run -it bertrandlupart/pike:oldstable-latest pike --info
+```shell
+$ docker run -it --rm bertrandlupart/pike:oldstable-latest pike --info
 Software......Pike
 Version.......Pike v7.8 release 866
 WWW...........http://pike.ida.liu.se/
@@ -114,6 +118,11 @@ Features......auto_bignum
               Standards.JSON
               WhiteFish
               Yp
+```
+
+```shell
+$ docker run -it --rm bertrandlupart/pike:oldstable-latest cat /etc/debian_version
+9.13
 ```
 
 # Testing : Pike 8.1.x
