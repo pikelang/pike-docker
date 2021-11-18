@@ -1,22 +1,18 @@
-Docker images for the Pike programming language
-https://pike.lysator.liu.se/
+Docker images for the [Pike programming language](https://pike.lysator.liu.se/)
 
-Images are available on Docker hub
-https://hub.docker.com/r/bertrandlupart/pike/tags
-
-[![dockeri.co](https://dockeri.co/image/bertrandlupart/pike)](https://hub.docker.com/r/bertrandlupart/pike)
+Images are available on [Docker hub](https://hub.docker.com/r/bertrandlupart/pike/tags)
 
 # Quick start
 
 Launch a Pike interactive interpreter :
 
 ```shell
-$ docker run -it --rm bertrandlupart/pike:stable-latest pike
+$ docker run -it --rm --user pike bertrandlupart/pike:stable-latest pike
 Pike v8.0 release 1116 running Hilfe v3.5 (Incremental Pike Frontend)
 >
 ```
 
-
+**Note**: A *pike* system user is provided in these images, so that the Pike interpreter can be run without ludicrous privileges. However, since this images are meant to serve as a basis for more complex pieces of software, neither USER nor WORKDIR are enforced upon runs. Use of proper values are left to the discretion of the user.
 
 # Stable : Pike 8.0.x
 
@@ -25,7 +21,7 @@ Container images for *stable / 8.0* are built using Debian packages, on top of [
 About *stable-latest* :
 
 ```shell
-$ docker run -it --rm bertrandlupart/pike:stable-latest pike --info
+$ docker run -it --rm --user pike bertrandlupart/pike:stable-latest pike --info
 Software......Pike
 Version.......Pike v8.0 release 1116
 WWW...........http://pike.lysator.liu.se/
@@ -68,7 +64,7 @@ Features......auto_bignum
               Yp
 ```
 ```shell
-$ docker run -it --rm bertrandlupart/pike:stable-latest cat /etc/debian_version
+$ docker run -it --rm --user pike bertrandlupart/pike:stable-latest cat /etc/debian_version
 11.1
 ```
 
@@ -79,7 +75,7 @@ Container images for *oldstable / 7.8* are built using Debian packages, on top o
 About *oldstable-latest* :
 
 ```shell
-$ docker run -it --rm bertrandlupart/pike:oldstable-latest pike --info
+$ docker run -it --rm --user pike bertrandlupart/pike:oldstable-latest pike --info
 Software......Pike
 Version.......Pike v7.8 release 866
 WWW...........http://pike.ida.liu.se/
@@ -121,7 +117,7 @@ Features......auto_bignum
 ```
 
 ```shell
-$ docker run -it --rm bertrandlupart/pike:oldstable-latest cat /etc/debian_version
+$ docker run -it --rm --user pike bertrandlupart/pike:oldstable-latest cat /etc/debian_version
 9.13
 ```
 
