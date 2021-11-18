@@ -1,0 +1,2 @@
+arch="linux/amd64,linux/i386,linux/arm64,linux/arm"
+tags="7.8-latest oldstable-latest"
