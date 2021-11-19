@@ -44,13 +44,13 @@ build_push()
 
 # Either give directory/ies as argument(s), either loop over docker/ directory
 
-if [ $# == 0 ]; then
+if [ $# -eq 0 ]; then
   for elem in "docker"/*; do
     echo "building ${elem}"
     build_push "${elem}"
   done
 else
-  for elem in $*; do
+  for elem in "$@"; do
     echo "building ${elem}"
     build_push "${elem}"
   done
