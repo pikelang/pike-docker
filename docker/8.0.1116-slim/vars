@@ -1,2 +1,2 @@
 arch="linux/amd64"
-tags=""
+tags="8.0-latest-slim stable-latest-slim"
