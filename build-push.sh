@@ -9,6 +9,13 @@ bin_docker="/usr/local/bin/docker"
 user="bertrandlupart"
 repo="pike"
 
+# DRYRUN cheat code
+if [[ -z "${DRYRUN}" ]]; then
+  output_opt="--push"
+else
+  output_opt=""
+fi
+
 
 # Build Dockerfile and push to Docker hub
 
@@ -21,7 +28,7 @@ build_push()
     return
   fi
 
-  # Populate arch and tags
+  # Populate arch and tags from vars file
   arch=""
   tags=""
   . "${dir}/vars"
@@ -37,7 +44,7 @@ build_push()
   ${bin_docker} buildx build \
     --tag="${user}/${repo}:${vers}" ${more_tags}\
     --platform="${arch}" \
-    --push \
+    ${output_opt} \
     "${dir}"
 }
 
