@@ -37,7 +37,14 @@ build_push()
   # Populate arch and tags from vars file
   arch=""
   tags=""
-  . "${dir}/vars"
+
+  # Skip if missing vars file
+  if [ ! -f "${dir}/vars" ]; then
+    echo "${dir} miss proper vars file, skipping" >&2
+    return
+  else
+    . "${dir}/vars"
+  fi
 
   vers=$(basename "${dir}")
 
