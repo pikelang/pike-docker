@@ -28,6 +28,12 @@ build_push()
     return
   fi
 
+  # Prevent build and push if a SKIP file is present
+  if [ -f "${dir}/SKIP" ]; then
+    echo "${dir} is skipped" >&2
+    return
+  fi
+
   # Populate arch and tags from vars file
   arch=""
   tags=""
