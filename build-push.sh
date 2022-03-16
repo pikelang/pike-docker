@@ -46,7 +46,7 @@ build_push()
     . "${dir}/vars"
   fi
 
-  vers=$(basename "${dir}")
+  version=$(basename "${dir}")
 
   # Get additional tags from vars file
   more_tags=""
@@ -55,7 +55,7 @@ build_push()
   done
 
   ${bin_docker} buildx build \
-    --tag="${user}/${repo}:${vers}" ${more_tags}\
+    --tag="${user}/${repo}:${version}" ${more_tags}\
     --platform="${arch}" \
     ${output_opt} \
     "${dir}"
