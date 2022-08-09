@@ -6,7 +6,7 @@ set -e
 bin_docker="/usr/local/bin/docker"
 
 # Docker hub
-user="bertrandlupart"
+user="pikelang"
 repo="pike"
 
 # DRYRUN cheat code
