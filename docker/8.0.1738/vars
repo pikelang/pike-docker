@@ -1,0 +1,2 @@
+arch="linux/amd64,linux/arm,linux/arm64,linux/i386,linux/mips64le,linux/ppc64le,linux/s390x"
+tags="8.0-unstable"
