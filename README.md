@@ -12,6 +12,10 @@ Pike v8.0 release 1116 running Hilfe v3.5 (Incremental Pike Frontend)
 >
 ```
 
+# To go further
+
+Have a look at the [sample](sample) directory, which provide simplest cases to run your Pike code inside a container.
+
 **Note**: A *pike* system user is provided in these images, so that the Pike interpreter can be run without ludicrous privileges. However, since this images are meant to serve as a basis for more complex pieces of software, neither USER nor WORKDIR are enforced upon runs. Use of proper values are left to the discretion of the user.
 
 # Stable : Pike 8.0.x
