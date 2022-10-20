@@ -10,7 +10,7 @@ user="pikelang"
 repo="pike"
 
 # DRYRUN cheat code
-if [[ -z "${DRYRUN}" ]]; then
+if [ -z "${DRYRUN}" ]; then
   output_opt="--push"
 else
   output_opt=""
