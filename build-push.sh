@@ -3,7 +3,7 @@
 #set -x
 set -e
 
-bin_docker="/usr/local/bin/docker"
+bin_docker=$(which docker)
 
 # Docker hub
 user="pikelang"
