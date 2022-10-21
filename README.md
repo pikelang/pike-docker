@@ -2,6 +2,8 @@ Docker images for the [Pike programming language](https://pike.lysator.liu.se/)
 
 Images are available on [Docker hub](https://hub.docker.com/r/pikelang/pike/tags)
 
+[![Build and Push image](https://github.com/bertrand-lupart/docker-pike/actions/workflows/build-push.yml/badge.svg)](https://github.com/bertrand-lupart/docker-pike/actions/workflows/build-push.yml)
+
 # Quick start
 
 Launch a Pike interactive interpreter :
