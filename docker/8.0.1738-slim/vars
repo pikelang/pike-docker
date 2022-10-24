@@ -1,2 +1,2 @@
 arch="linux/amd64,linux/arm64,linux/arm,linux/ppc64le,linux/i386"
-tags="8.0-latest-slim stable-latest-slim"
+tags="8.0-slim 8.0-latest-slim stable-latest-slim"
