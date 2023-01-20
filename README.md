@@ -4,6 +4,11 @@ Images are available on [Docker hub](https://hub.docker.com/r/pikelang/pike/tags
 
 [![Build and Push image](https://github.com/bertrand-lupart/docker-pike/actions/workflows/build-push.yml/badge.svg)](https://github.com/bertrand-lupart/docker-pike/actions/workflows/build-push.yml)
 
+```mermaid
+graph LR
+P[Pike release] --> D[Distribution package] --> I[OCI Container Image]
+```
+
 # Quick start
 
 Launch a Pike interactive interpreter :
