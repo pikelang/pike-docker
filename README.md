@@ -6,7 +6,7 @@ Images are available on [Docker hub](https://hub.docker.com/r/pikelang/pike/tags
 
 ```mermaid
 graph LR
-P[Pike release] --> D[Distribution package] --> I[OCI Container Image]
+P[Pike release] --> D[Distribution package] --> I(((OCI Container Image)))
 ```
 
 # Quick start
