@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM debian:bookworm
 
 RUN apt-get update && apt-get -y upgrade &&  \
   apt-get install -y --no-install-recommends \
