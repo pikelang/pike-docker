@@ -6,7 +6,8 @@ Images are available on [Docker hub](https://hub.docker.com/r/pikelang/pike/tags
 
 ```mermaid
 graph LR
-P[Pike release] --> D[Distribution package] --> I(((OCI Container Image)))
+P[Pike release] --> D[Debian Distribution package] --> I(((OCI Container Image\nstandard flavor )))
+P[Pike release] --> A[Alpine Distribution package] --> Islim(((OCI Container Image\n-slim flavor )))
 ```
 
 # Quick start
